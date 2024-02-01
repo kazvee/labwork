@@ -1,15 +1,15 @@
-largestNumber = float('-inf')
-positionOfLargestNumber = 0
-currentPositionOfLargestNumber = 0
+largest_number = float('-inf')
+position_of_largest_number = 0
+current_position_of_largest_number = 0
 
-numberToCheck = float(input("Enter a real number, or enter `-1` to stop: "))
+number_to_check = float(input("Enter a real number, or enter `-1` to stop: "))
 
-while numberToCheck != -1:
-    currentPositionOfLargestNumber += 1
+while number_to_check != -1:
+    current_position_of_largest_number += 1
 
-    if numberToCheck > largestNumber:
-        largestNumber = numberToCheck
-        positionOfLargestNumber = currentPositionOfLargestNumber
-    numberToCheck = float(input("Enter a real number, or enter `-1` to stop: "))
+    if number_to_check > largest_number:
+        largest_number = number_to_check
+        position_of_largest_number = current_position_of_largest_number
+    number_to_check = float(input("Enter a real number, or enter `-1` to stop: "))
 
-print("The largest number is:", largestNumber, "and it was at position", positionOfLargestNumber, "in the list!")
+print("The largest number is:", largest_number, "and it was at position", position_of_largest_number, "in the list!")

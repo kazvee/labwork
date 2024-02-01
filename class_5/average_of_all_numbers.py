@@ -1,12 +1,12 @@
-numbersEntered = 0
-totalSum = 0
+numbers_entered = 0
+total_sum = 0
 average = 0
-numberToAdd = int(input("Enter a number, or enter `0` to stop: "))
+number_to_add = int(input("Enter a number, or enter `0` to stop: "))
 
-while numberToAdd != 0:
-    totalSum += numberToAdd
-    numbersEntered += 1
-    numberToAdd = int(input("Enter a number, or enter `0` to stop: "))
-average = totalSum / numbersEntered
+while number_to_add != 0:
+    total_sum += number_to_add
+    numbers_entered += 1
+    number_to_add = int(input("Enter a number, or enter `0` to stop: "))
+average = total_sum / numbers_entered
 
 print("The average of all those numbers is: ", average)

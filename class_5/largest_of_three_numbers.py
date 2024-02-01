@@ -3,10 +3,10 @@ second = int(input("Enter the second number: "))
 third = int(input("Enter the third number: "))
 
 if first > second and first > third:
-    largestNumber = first
+    largest_number = first
 elif second > third:
-    largestNumber = second
+    largest_number = second
 else:
-    largestNumber = third
+    largest_number = third
 
-print("The largest number is: ", largestNumber)
+print("The largest number is: ", largest_number)
