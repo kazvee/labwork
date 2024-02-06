@@ -1,12 +1,14 @@
-smallest_number = float('inf')
-number_to_check = input("Enter a number, or enter '$' to stop: ")
+numbers = []
 
-while number_to_check != '$':
-    number_to_check = int(number_to_check)
+while True:
+    user_input = input("Enter a number, or enter '$' to stop: ")
 
-    if number_to_check < smallest_number:
-        smallest_number = number_to_check
+    if user_input == "$":
+        break
 
-    number_to_check = input("Enter a number, or enter '$' to stop: ")
+    if user_input.isdigit():
+        numbers.append(int(user_input))
 
-print("The smallest number is:", smallest_number)
+if numbers:
+    smallest_number = min(numbers)
+    print("The smallest number is:", smallest_number)
